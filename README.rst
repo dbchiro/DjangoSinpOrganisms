@@ -18,7 +18,7 @@ Quick start
     $ pip install -U dj-sinp-organisms
 
 
-    
+
 2. Configure ``INSTALLED_APPS``:
 
 .. code-block:: python
@@ -32,7 +32,7 @@ Quick start
         'sinp_organisms',
         (...),
     )
-    
+
 
 3. Configure ``urls.py``:
 

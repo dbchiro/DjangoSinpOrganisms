@@ -1,10 +1,6 @@
 from django.urls import path
 
-from .views import (
-    OrganismViewset,
-    OrganismMemberViewset,
-)
-
+from .views import OrganismMemberViewset, OrganismViewset
 
 app_name = "sinp_organisms"
 
@@ -29,5 +25,4 @@ urlpatterns = [
         OrganismMemberViewset.as_view({"get": "retrieve"}),
         name="organism_member",
     ),
-    # path("nomenclature/type/<int:pk>/item/<int:pk>",TypeViewset.as_view({"get":"list"}), name="item_list"),
 ]
