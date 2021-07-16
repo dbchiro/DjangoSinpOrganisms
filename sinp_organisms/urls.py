@@ -6,7 +6,7 @@ app_name = "sinp_organisms"
 
 urlpatterns = [
     path(
-        "organisms/",
+        "organisms",
         OrganismViewset.as_view({"get": "list"}),
         name="organism_list",
     ),
