@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Organism, OrganismMember
 
+from .models import Organism, OrganismMember
 
 
 class OrganismSerializer(ModelSerializer):
