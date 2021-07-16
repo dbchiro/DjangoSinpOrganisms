@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "dj_sinp_organisms"
 version = "0.1.0"
-description = ""
-authors = ["hypsug0 <fcloitre@dbchiro.org>"]
+description = "Django app to manage french SINP organisms standard"
+authors = ["dbChiro project <project@dbchiro.org>"]
 packages = [
     { include = "sinp_organisms" },
 ]
