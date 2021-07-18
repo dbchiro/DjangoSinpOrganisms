@@ -4,13 +4,14 @@ import logging
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
+from .mixins import OrganismsFilteringMixin
 from .models import Organism, OrganismMember
 from .serializers import OrganismMemberSerializer, OrganismSerializer
 
 logger = logging.getLogger(__name__)
 
 
-class OrganismViewset(ReadOnlyModelViewSet):
+class OrganismViewset(OrganismsFilteringMixin, ReadOnlyModelViewSet):
     serializer_class = OrganismSerializer
     permission_classes = [IsAuthenticated]
     queryset = Organism.objects.all()
