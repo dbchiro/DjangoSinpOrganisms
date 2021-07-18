@@ -44,6 +44,13 @@ class Organism(BaseModel):
         editable=False,
         verbose_name=_("Identifiant unique"),
     )
+    parent = models.ForeignKey(
+        "Organism",
+        verbose_name=_("Organisme parent"),
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
     label = models.CharField(
         max_length=500, unique=True, verbose_name=_("Nom")
     )
