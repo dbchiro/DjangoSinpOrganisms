@@ -191,22 +191,15 @@ python-versions = "*"
 
 [[package]]
 name = "dj-sinp-nomenclatures"
-version = "0.1.0"
+version = "0.1.1"
 description = "Django app to manage french SINP nomenclatures standards"
 category = "main"
 optional = false
 python-versions = ">=3.6.2,<4.0"
-develop = false
 
 [package.dependencies]
-Django = "^3.2.5"
-django-rest-framework = "^0.1.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dbchiro/DjangoSinpNomenclature.git"
-reference = "dev"
-resolved_reference = "e1189f96033b268d09058b6b4e7adcfbd15c532f"
+Django = ">=3.2.5,<4.0.0"
+django-rest-framework = ">=0.1.0,<0.2.0"
 
 [[package]]
 name = "django"
@@ -922,7 +915,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.2,<4.0"
-content-hash = "b9513418e61f0d8a4058d0b4dddfd625332f3ab794826bbe3eed6103f9508f7c"
+content-hash = "6c24e88f05f6815c79523f12754311ccd4ea428ae7281f1e78a195286d4d0a07"
 
 [metadata.files]
 alabaster = [
@@ -993,7 +986,10 @@ distlib = [
     {file = "distlib-0.3.2-py2.py3-none-any.whl", hash = "sha256:23e223426b28491b1ced97dc3bbe183027419dfc7982b4fa2f05d5f3ff10711c"},
     {file = "distlib-0.3.2.zip", hash = "sha256:106fef6dc37dd8c0e2c0a60d3fca3e77460a48907f335fa28420463a6f799736"},
 ]
-dj-sinp-nomenclatures = []
+dj-sinp-nomenclatures = [
+    {file = "dj_sinp_nomenclatures-0.1.1-py3-none-any.whl", hash = "sha256:8e2ebeca3c201ed0fa1c12ab65eb7fe072f8edb617166e7224073292b3acad77"},
+    {file = "dj_sinp_nomenclatures-0.1.1.tar.gz", hash = "sha256:297fbad09592b2d7cc616a1bca323a7f8f93c7d82c2b8694e80fa7b36a7c4cff"},
+]
 django = [
     {file = "Django-3.2.5-py3-none-any.whl", hash = "sha256:c58b5f19c5ae0afe6d75cbdd7df561e6eb929339985dbbda2565e1cabb19a62e"},
     {file = "Django-3.2.5.tar.gz", hash = "sha256:3da05fea54fdec2315b54a563d5b59f3b4e2b1e69c3a5841dda35019c01855cd"},

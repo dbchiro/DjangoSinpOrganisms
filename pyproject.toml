@@ -19,7 +19,7 @@ packages = [
 python = ">=3.6.2,<4.0"
 Django = "^3.2.5"
 django-rest-framework = "^0.1.0"
-dj-sinp-nomenclatures = {git = "https://github.com/dbchiro/DjangoSinpNomenclature.git", rev = "dev"}
+dj-sinp-nomenclatures = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
