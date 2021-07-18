@@ -5,7 +5,6 @@ SINP Organisms for Django
 `DjangoSinpOrganisms <https://github.com/dbchiro/DjangoSinpOrganisms>`_ is a simple `Django <https://www.djangoproject.com/>`_ reusable app to manage `French SINP Organisms <http://standards-sinp.mnhn.fr/referentiel-des-organismes/>`_, respecting standard.
 
 
-
 Detailed documentation is in the "docs" directory.
 
 Quick start
@@ -52,4 +51,4 @@ Quick start
 5. Start the development server and visit http://127.0.0.1:8000/admin/
    to create an organism (you'll need the Admin app enabled).
 
-6. Visit http://127.0.0.1:8000/api/v1/organisms to view organisms  API
+6. Visit http://127.0.0.1:8000/api/v1/organisms to view organisms API.
