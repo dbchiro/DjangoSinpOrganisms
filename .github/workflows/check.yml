@@ -33,14 +33,12 @@ jobs:
       #  -----  Install dependencies  -----
       #------------------------------------
       - name: Install dependencies
-        run: |
-          poetry install
+        run: poetry install
       #------------------------------
       #--------  run isort  ---------
       #------------------------------
       - name: Format check with isort
-        run:  |
-        poetry run isort --check sinp_organisms --profile black
+        run: poetry run isort --check sinp_organisms --profile black
       #------------------------------
       #--------  run black  ---------
       #------------------------------
