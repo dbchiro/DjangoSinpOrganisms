@@ -2,8 +2,8 @@ from uuid import uuid4
 
 from django.conf import settings
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
-from sinp_nomenclatures.models import Item as Nomenclature
+from django.utils.translation import gettext as _
+from sinp_nomenclatures.models import Nomenclature
 
 from .validators import phone_regex
 

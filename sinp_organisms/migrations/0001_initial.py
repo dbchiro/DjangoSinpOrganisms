@@ -43,7 +43,9 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "label",
-                    models.CharField(max_length=500, unique=True, verbose_name="Nom"),
+                    models.CharField(
+                        max_length=500, unique=True, verbose_name="Nom"
+                    ),
                 ),
                 (
                     "short_label",
@@ -64,19 +66,28 @@ class Migration(migrations.Migration):
                 (
                     "address",
                     models.CharField(
-                        blank=True, max_length=500, null=True, verbose_name="Adresse"
+                        blank=True,
+                        max_length=500,
+                        null=True,
+                        verbose_name="Adresse",
                     ),
                 ),
                 (
                     "postal_code",
                     models.CharField(
-                        blank=True, max_length=20, null=True, verbose_name="Code postal"
+                        blank=True,
+                        max_length=20,
+                        null=True,
+                        verbose_name="Code postal",
                     ),
                 ),
                 (
                     "municipality",
                     models.CharField(
-                        blank=True, max_length=250, null=True, verbose_name="Commune"
+                        blank=True,
+                        max_length=250,
+                        null=True,
+                        verbose_name="Commune",
                     ),
                 ),
                 (
@@ -103,7 +114,10 @@ class Migration(migrations.Migration):
                         verbose_name="Numéro de téléphone",
                     ),
                 ),
-                ("url", models.URLField(blank=True, null=True, verbose_name="URL")),
+                (
+                    "url",
+                    models.URLField(blank=True, null=True, verbose_name="URL"),
+                ),
                 (
                     "extra_data",
                     models.JSONField(
@@ -117,7 +131,7 @@ class Migration(migrations.Migration):
                         limit_choices_to={"type": "action_scope"},
                         on_delete=django.db.models.deletion.DO_NOTHING,
                         related_name="organism_action_scope",
-                        to="sinp_nomenclatures.item",
+                        to="sinp_nomenclatures.nomenclature",
                         verbose_name="Périmètre d'action",
                     ),
                 ),
@@ -141,7 +155,7 @@ class Migration(migrations.Migration):
                         null=True,
                         on_delete=django.db.models.deletion.DO_NOTHING,
                         related_name="organism_geographic_area",
-                        to="sinp_nomenclatures.item",
+                        to="sinp_nomenclatures.nomenclature",
                         verbose_name="Zone géographique",
                     ),
                 ),
@@ -189,7 +203,7 @@ class Migration(migrations.Migration):
                         limit_choices_to={"type": "member_level"},
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="member_level",
-                        to="sinp_nomenclatures.item",
+                        to="sinp_nomenclatures.nomenclature",
                         verbose_name="Niveau du membre",
                     ),
                 ),
@@ -237,7 +251,7 @@ class Migration(migrations.Migration):
                 limit_choices_to={"type": "organism_status"},
                 on_delete=django.db.models.deletion.DO_NOTHING,
                 related_name="organism_status",
-                to="sinp_nomenclatures.item",
+                to="sinp_nomenclatures.nomenclature",
                 verbose_name="Statut",
             ),
         ),
@@ -248,7 +262,7 @@ class Migration(migrations.Migration):
                 limit_choices_to={"type": "organism_type"},
                 on_delete=django.db.models.deletion.DO_NOTHING,
                 related_name="organism_type",
-                to="sinp_nomenclatures.item",
+                to="sinp_nomenclatures.nomenclature",
                 verbose_name="Type d'organisme",
             ),
         ),
