@@ -12,10 +12,10 @@ include = ["LICENSE"]
 packages = [{ include = "sinp_organisms" }]
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
-Django = "^4.1.5"
-djangorestframework = "^3.14.0"
-dj-sinp-nomenclatures = {git = "https://github.com/dbchiro/DjangoSinpNomenclature.git"}
+python = ">=3.8.1,<4.0"
+Django = ">=3.2,<5.0"
+djangorestframework = ">=3.0,<4.0"
+dj-sinp-nomenclatures = ">=0.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
@@ -27,6 +27,7 @@ pre-commit = "^3.2.2"
 python-decouple = "^3.8"
 psycopg2-binary = "^2.9.6"
 drf-yasg = "^1.21.5"
+dj-sinp-nomenclatures = { path = "../dj-sinp-nomenclatures", develop = true }
 
 
 [tool.poetry.group.docs.dependencies]
