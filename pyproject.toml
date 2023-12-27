@@ -13,7 +13,7 @@ packages = [{ include = "sinp_organisms" }]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
-Django = "^4"
+Django = ">=3.2"
 djangorestframework = "^3"
 dj-sinp-nomenclatures = {git = "https://github.com/dbchiro/DjangoSinpNomenclature.git"}
 
@@ -28,6 +28,7 @@ python-decouple = "^3.8"
 psycopg2-binary = "^2.9.9"
 drf-yasg = "^1.21.7"
 dj-database-url = "^2.1.0"
+#dj-sinp-nomenclatures = { path = "../dj_sinp_nomenclatures", develop = true }
 
 
 [tool.poetry.group.docs.dependencies]
