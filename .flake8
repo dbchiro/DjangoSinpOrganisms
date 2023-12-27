@@ -11,3 +11,5 @@ exclude =
     dist,
     migrations
 max-complexity = 10
+max-line-length = 79
+extend-ignore = E203, E704, W503

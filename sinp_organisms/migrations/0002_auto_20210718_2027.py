@@ -6,7 +6,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("sinp_nomenclatures", "0001_initial"),
         ("sinp_organisms", "0001_initial"),

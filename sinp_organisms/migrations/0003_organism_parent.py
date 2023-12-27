@@ -5,15 +5,20 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('sinp_organisms', '0002_auto_20210718_2027'),
+        ("sinp_organisms", "0002_auto_20210718_2027"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='organism',
-            name='parent',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='sinp_organisms.organism', verbose_name='Organisme parent'),
+            model_name="organism",
+            name="parent",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to="sinp_organisms.organism",
+                verbose_name="Organisme parent",
+            ),
         ),
     ]

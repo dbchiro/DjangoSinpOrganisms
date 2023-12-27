@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 
 from decouple import config
+from dj_database_url import parse as db_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -111,14 +112,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 # }
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.contrib.gis.db.backends.postgis",
-        "NAME": config("DBNAME", default="dbchiroweb"),
-        "USER": config("DBUSER"),
-        "PASSWORD": config("DBPASSWORD"),
-        "HOST": config("DBHOST", default="localhost"),
-        "PORT": config("DBPORT", default="5432", cast=int),
-    }
+    "default": config(
+        "DATABASE_URL", default="sqlite:///db.sqlite3", cast=db_url
+    )
 }
 
 # Password validation

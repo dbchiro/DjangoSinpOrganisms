@@ -7,11 +7,11 @@ app_name = "sinp_organisms"
 
 router = SimpleRouter(trailing_slash=False)
 
-router.register(r"organismes", OrganismViewset)
+router.register(r"organisms", OrganismViewset)
 router.register(r"members", OrganismMemberViewset)
 
 
-urlpatterns = [path("organismes/", include(router.urls))]
+urlpatterns = [path("organisms/", include(router.urls))]
 
 # urlpatterns = [
 #     path(

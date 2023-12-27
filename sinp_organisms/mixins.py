@@ -5,11 +5,16 @@ from django.db.models import Q
 logger = logging.getLogger(__name__)
 
 
+def set_if_not_none(mapping, key, value):
+    if value is not None:
+        mapping[key] = value
+
+
 class OrganismsFilteringMixin:
     """Mixin used for Place lists filtering"""
 
     def get_queryset(self, *args, **kwargs):
-        qs = super(OrganismsFilteringMixin, self).get_queryset()
+        qs = super().get_queryset()
 
         label = self.request.query_params.get("label", None)
         uuid = self.request.query_params.get("uuid", None)
@@ -18,10 +23,10 @@ class OrganismsFilteringMixin:
             "geographic_area", None
         )
         status = self.request.query_params.get("status", None)
-        type = self.request.query_params.get("type", None)
+        organism_type = self.request.query_params.get("type", None)
         # member = self.request.query_params.get("member", None)
 
-        logger.info(f"QUERY_PARAMS {self.request.query_params}")
+        logger.info("QUERY_PARAMS %s", self.request.query_params)
 
         qs = (
             qs.filter(
@@ -59,7 +64,7 @@ class OrganismsFilteringMixin:
 
         qs = (
             qs.filter(Q(type__mnemonic=type) | Q(type__code=type))
-            if type is not None
+            if organism_type is not None
             else qs
         )
 
