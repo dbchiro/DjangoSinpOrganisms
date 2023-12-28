@@ -23,11 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SECRET_KEY")
+SECRET_KEY = config(
+    "SECRET_KEY",
+    default="625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a",
+)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = config("DEBUG", cast=bool, default=False)
 
 LOGGING = {
     "version": 1,
@@ -48,11 +51,15 @@ LOGGING = {
 
 
 ALLOWED_HOSTS = config(
-    "ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(",")]
+    "ALLOWED_HOSTS",
+    cast=lambda v: [s.strip() for s in v.split(",")],
+    default="127.0.0.1,localhost,0.0.0.0",
 )
 
 CSRF_TRUSTED_ORIGINS = config(
-    "CSRF_TRUSTED_ORIGINS", cast=lambda v: [s.strip() for s in v.split(",")]
+    "CSRF_TRUSTED_ORIGINS",
+    cast=lambda v: [s.strip() for s in v.split(",")],
+    default="http://127.0.0.1,http://localhost,http://0.0.0.0",
 )
 
 # Application definition
@@ -172,8 +179,8 @@ STATIC_URL = "/static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-EMAIL_HOST = config("EMAIL_HOST")
-EMAIL_PORT = config("EMAIL_PORT", cast=int)
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
+EMAIL_HOST = config("EMAIL_HOST", default="smtp.mail.net")
+EMAIL_PORT = config("EMAIL_PORT", cast=int, default=465)
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="<MyEmailPwd>")
+EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="username@email.net")
+EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool, default=True)
