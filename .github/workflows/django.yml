@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: django_ci
     strategy:
       max-parallel: 4
       matrix:
@@ -26,5 +25,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Run Tests
+        env: 
+          SECRET_KEY: 625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a
         run: |
           poetry run python -m manage test
