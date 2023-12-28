@@ -307,22 +307,18 @@ typing-extensions = ">=3.10.0.0"
 
 [[package]]
 name = "dj-sinp-nomenclatures"
-version = "0.2.2"
+version = "0.2.4"
 description = "Django app to manage french SINP nomenclatures standards"
 optional = false
 python-versions = ">=3.8.1,<4.0"
-files = []
-develop = false
+files = [
+    {file = "dj_sinp_nomenclatures-0.2.4-py3-none-any.whl", hash = "sha256:5ffde1f662d316b92e4e5f4daef02c234e0f8748eebc876cfd369b20a562236a"},
+    {file = "dj_sinp_nomenclatures-0.2.4.tar.gz", hash = "sha256:10b4695ae8f12f68d812ef3c5e0c1303ff3f7dde96f74fa7c9164cfc37200b46"},
+]
 
 [package.dependencies]
 Django = ">=3.2,<5.0"
 djangorestframework = ">=3.0,<4.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/dbchiro/DjangoSinpNomenclature.git"
-reference = "HEAD"
-resolved_reference = "455ee5242869a02f62cd2d17528e022a3d9ee165"
 
 [[package]]
 name = "django"
@@ -1558,4 +1554,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<4.0"
-content-hash = "21768d72b097d15fc6256a14a29e5db5ffa76a6364795becda916904917f86ea"
+content-hash = "07413c8b6c15445daa02b72eccce6f19176a04482e875081353dd6c0a6e455b8"

@@ -15,7 +15,7 @@ packages = [{ include = "sinp_organisms" }]
 python = ">=3.8.1,<4.0"
 Django = ">=3.2"
 djangorestframework = "^3"
-dj-sinp-nomenclatures = {git = "https://github.com/dbchiro/DjangoSinpNomenclature.git"}
+dj-sinp-nomenclatures = "^0.2.4"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.12.1"
