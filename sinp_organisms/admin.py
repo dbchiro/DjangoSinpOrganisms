@@ -5,8 +5,16 @@ from .models import Organism, OrganismMember
 
 
 class OrganismAdmin(admin.ModelAdmin):
-    list_display = ("id", "short_label", "status", "type", "action_scope")
-    list_filter = ("type",)
+    list_display = (
+        "id",
+        "short_label",
+        "status",
+        "type",
+        "action_scope",
+        "enabled",
+        "parent",
+    )
+    list_filter = ("type", "enabled", "geographic_area")
 
 
 class OrganismMemberAdmin(admin.ModelAdmin):

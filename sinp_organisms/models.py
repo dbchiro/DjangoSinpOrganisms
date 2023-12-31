@@ -44,6 +44,9 @@ class Organism(BaseModel):
         editable=False,
         verbose_name=_("Identifiant unique"),
     )
+    administrative_reference = models.CharField(
+        max_length=100, blank=True, null=True, verbose_name=_("SIRET")
+    )
     parent = models.ForeignKey(
         "Organism",
         verbose_name=_("Organisme parent"),
@@ -65,11 +68,9 @@ class Organism(BaseModel):
         verbose_name=_("Périmètre d'action"),
         help_text=_("Périmètre d'action de l'organisme"),
     )
-    geographic_area = models.ForeignKey(
+    geographic_area = models.ManyToManyField(
         Nomenclature,
-        null=True,
         blank=True,
-        on_delete=models.DO_NOTHING,
         limit_choices_to={"type__mnemonic": "geographic_area"},
         related_name="organism_geographic_area",
         verbose_name=_("Zone géographique"),
@@ -127,6 +128,7 @@ class Organism(BaseModel):
         related_name="organism_member",
         verbose_name=_("Membres"),
     )
+    enabled = models.BooleanField(default=True, verbose_name=_("Actif"))
     extra_data = models.JSONField(
         blank=True, null=True, verbose_name=_("Additional datas")
     )
