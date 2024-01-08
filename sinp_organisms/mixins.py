@@ -1,4 +1,5 @@
 import logging
+from ast import literal_eval
 
 from django.db.models import Q
 
@@ -24,9 +25,13 @@ class OrganismsFilteringMixin:
         )
         status = self.request.query_params.get("status", None)
         organism_type = self.request.query_params.get("type", None)
-        # member = self.request.query_params.get("member", None)
+        enabled = self.request.query_params.get("enabled", None)
+        member = self.request.query_params.get("member", None)
 
-        logger.info("QUERY_PARAMS %s", self.request.query_params)
+        if enabled is not None:
+            enabled = enabled.lower().capitalize()
+            if enabled in ("True", "False"):
+                qs = qs.filter(enabled=literal_eval(enabled))
 
         qs = (
             qs.filter(
@@ -68,4 +73,5 @@ class OrganismsFilteringMixin:
             else qs
         )
 
+        qs = qs.filter(members=member) if member else qs
         return qs

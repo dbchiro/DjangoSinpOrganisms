@@ -1,6 +1,25 @@
 from rest_framework.serializers import ModelSerializer
+from sinp_nomenclatures.serializers import NomenclatureSerializer
 
 from .models import Organism, OrganismMember
+
+
+class OrganismMemberSerializer(ModelSerializer):
+    member_level = NomenclatureSerializer(read_only=True)
+
+    class Meta:
+        model = OrganismMember
+        fields = [
+            "id",
+            "member",
+            "member_level",
+        ]
+        read_only_fields = [
+            "created_by",
+            "updated_by",
+            "timestamp_create",
+            "timestamp_update",
+        ]
 
 
 class OrganismSerializer(ModelSerializer):
@@ -34,21 +53,11 @@ class OrganismSerializer(ModelSerializer):
             "timestamp_update",
             "uuid",
         ]
-        depth = 0
 
 
-class OrganismMemberSerializer(ModelSerializer):
-    class Meta:
-        model = OrganismMember
-        fields = [
-            "id",
-            "member",
-            "member_level",
-        ]
-        read_only_fields = [
-            "created_by",
-            "updated_by",
-            "timestamp_create",
-            "timestamp_update",
-        ]
-        depth = 1
+class OrganismDetailledSerializer(OrganismSerializer):
+    action_scope = NomenclatureSerializer(read_only=True)
+    geographic_area = NomenclatureSerializer(read_only=True, many=True)
+    status = NomenclatureSerializer(read_only=True)
+    type = NomenclatureSerializer(read_only=True)
+    # members = OrganismMemberSerializer(many=True)

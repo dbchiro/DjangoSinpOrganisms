@@ -38,6 +38,8 @@ class BaseModel(models.Model):
 
 # Create your models here.
 class Organism(BaseModel):
+    """Organism model"""
+
     uuid = models.UUIDField(
         default=uuid4,
         unique=True,
@@ -141,10 +143,13 @@ class Organism(BaseModel):
 
 
 class OrganismMember(BaseModel):
+    """Organism members model"""
+
     member = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         verbose_name=_("Utilisateur"),
+        related_name="members",
     )
     organism = models.ForeignKey(
         "Organism", on_delete=models.CASCADE, verbose_name=_("Organisme")
