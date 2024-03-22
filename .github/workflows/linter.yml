@@ -2,12 +2,12 @@ name: "✅ Linter"
 
 on:
   push:
-    branches: [master, develop]
+    branches: [main, develop]
     paths:
       - "**.py"
 
   pull_request:
-    branches: [master, develop]
+    branches: [main, develop]
     paths:
       - "**.py"
 
