@@ -7,37 +7,36 @@ from sinp_nomenclatures.models import Nomenclature
 
 from .validators import phone_regex
 
+# class BaseModel(models.Model):
+#     """Generic base model with standard metadatas"""
 
-class BaseModel(models.Model):
-    """Generic base model with standard metadatas"""
+#     timestamp_create = models.DateTimeField(auto_now_add=True, editable=False)
+#     timestamp_update = models.DateTimeField(auto_now=True, editable=False)
+#     created_by = models.ForeignKey(
+#         settings.AUTH_USER_MODEL,
+#         null=True,
+#         blank=True,
+#         db_index=True,
+#         editable=False,
+#         related_name="+",
+#         on_delete=models.SET_NULL,
+#     )
+#     updated_by = models.ForeignKey(
+#         settings.AUTH_USER_MODEL,
+#         null=True,
+#         blank=True,
+#         db_index=True,
+#         editable=False,
+#         related_name="+",
+#         on_delete=models.SET_NULL,
+#     )
 
-    timestamp_create = models.DateTimeField(auto_now_add=True, editable=False)
-    timestamp_update = models.DateTimeField(auto_now=True, editable=False)
-    created_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        null=True,
-        blank=True,
-        db_index=True,
-        editable=False,
-        related_name="+",
-        on_delete=models.SET_NULL,
-    )
-    updated_by = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        null=True,
-        blank=True,
-        db_index=True,
-        editable=False,
-        related_name="+",
-        on_delete=models.SET_NULL,
-    )
-
-    class Meta:
-        abstract = True
+#     class Meta:
+#         abstract = True
 
 
 # Create your models here.
-class Organism(BaseModel):
+class Organism(models.Model):
     """Organism model"""
 
     uuid = models.UUIDField(
@@ -142,7 +141,7 @@ class Organism(BaseModel):
         return self.short_label
 
 
-class OrganismMember(BaseModel):
+class OrganismMember(models.Model):
     """Organism members model"""
 
     member = models.ForeignKey(

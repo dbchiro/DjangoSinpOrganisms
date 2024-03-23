@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dj_sinp_organisms"
-version = "1.0.0"
+version = "1.1.0"
 description = "Django app to manage french SINP organisms standard"
 authors = ["dbChiro project <project@dbchiro.org>"]
 license = "AGPLv3"
@@ -35,6 +35,7 @@ dj-database-url = "^2.1.0"
 sphinx = "^6"
 sphinx-rtd-theme = "^2.0.0"
 rstcheck = "^6.2.0"
+myst-parser = "^2.0.0"
 
 [tool.isort]
 include_trailing_comma = true
