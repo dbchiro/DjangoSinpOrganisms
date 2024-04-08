@@ -15,7 +15,7 @@ packages = [{ include = "sinp_organisms" }]
 python = ">=3.8.1,<4.0"
 Django = ">=3.2"
 djangorestframework = "^3"
-dj-sinp-nomenclatures = "^0.2.4"
+dj-sinp-nomenclatures = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.12.1"
@@ -29,6 +29,7 @@ psycopg2-binary = "^2.9.9"
 drf-yasg = "^1.21.7"
 dj-database-url = "^2.1.0"
 #dj-sinp-nomenclatures = { path = "../dj_sinp_nomenclatures", develop = true }
+bpython = "^0.24"
 
 
 [tool.poetry.group.docs.dependencies]
