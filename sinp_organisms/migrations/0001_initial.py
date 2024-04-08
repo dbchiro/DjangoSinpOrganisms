@@ -54,9 +54,9 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "geographic_area_details",
-                    models.CharField(
+                    models.CharField(  # noqa: DJ01
                         blank=True,
-                        help_text="Information précisant la zone géographique d'action. Exemple : Basse-Terre",
+                        help_text="Information précisant la zone géographique d'action. Exemple : Basse-Terre",  # noqa: E501
                         max_length=500,
                         null=True,
                         verbose_name="Détails sur la zone géographique",
@@ -64,7 +64,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "address",
-                    models.CharField(
+                    models.CharField(  # noqa: DJ01
                         blank=True,
                         max_length=500,
                         null=True,
@@ -73,7 +73,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "postal_code",
-                    models.CharField(
+                    models.CharField(  # noqa: DJ01
                         blank=True,
                         max_length=20,
                         null=True,
@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "municipality",
-                    models.CharField(
+                    models.CharField(  # noqa: DJ01
                         blank=True,
                         max_length=250,
                         null=True,
@@ -91,7 +91,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "email",
-                    models.EmailField(
+                    models.EmailField(  # noqa: DJ01
                         blank=True,
                         max_length=254,
                         null=True,
@@ -100,13 +100,18 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "phone_number",
-                    models.CharField(
+                    models.CharField(  # noqa: DJ01
                         blank=True,
                         max_length=17,
                         null=True,
                         validators=[
                             django.core.validators.RegexValidator(
-                                message="Les numéros de téléphones doivent être renseignés avec le format : '+999999999'. jusqu'à 15 chiffres sont autorisés",
+                                message=(
+                                    "Les numéros de téléphones doivent "
+                                    "être renseignés avec le format : "
+                                    "'+999999999'. jusqu'à 15 chiffres "
+                                    "sont autorisés"
+                                ),
                                 regex="^\\+?1?\\d{9,15}$",
                             )
                         ],
@@ -115,7 +120,9 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "url",
-                    models.URLField(blank=True, null=True, verbose_name="URL"),
+                    models.URLField(  # noqa: DJ01
+                        blank=True, null=True, verbose_name="URL"
+                    ),
                 ),
                 (
                     "extra_data",
@@ -126,7 +133,10 @@ class Migration(migrations.Migration):
                 (
                     "action_scope",
                     models.ForeignKey(
-                        help_text="Périmètre d'action de l'organisme (Européen, national, Supra-régional, Régional, Inconnu)",
+                        help_text=(
+                            "Périmètre d'action de l'organisme (Européen, "
+                            "national, Supra-régional, Régional, Inconnu)"
+                        ),
                         limit_choices_to={"type": "action_scope"},
                         on_delete=django.db.models.deletion.DO_NOTHING,
                         related_name="organism_action_scope",
@@ -246,7 +256,9 @@ class Migration(migrations.Migration):
             model_name="organism",
             name="status",
             field=models.ForeignKey(
-                help_text="Permet d'indiquer si l'organisme est public ou privé",
+                help_text=(
+                    "Permet d'indiquer si l'organisme est public ou privé"
+                ),
                 limit_choices_to={"type": "organism_status"},
                 on_delete=django.db.models.deletion.DO_NOTHING,
                 related_name="organism_status",

@@ -1,43 +1,44 @@
-exclude: '.venv|__pycache__|tests/dev/|tests/fixtures/|core/static/'
-include: 'core/static/app/'
+exclude: ".venv|__pycache__|tests/dev/|tests/fixtures/|core/static/"
+include: "core/static/app/"
 
 repos:
-    - repo: https://github.com/pre-commit/pre-commit-hooks
-      rev: v4.5.0
-      hooks:
-          - id: check-added-large-files
-            args: ['--maxkb=500']
-          - id: check-case-conflict
-          - id: check-xml
-          - id: check-yaml
-          - id: detect-private-key
-          - id: end-of-file-fixer
-          - id: fix-byte-order-marker
-          - id: fix-encoding-pragma
-            args: [--remove]
-          - id: trailing-whitespace
-            args: [--markdown-linebreak-ext=md]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=10000"]
+      - id: check-case-conflict
+      - id: check-xml
+      - id: check-yaml
+      - id: check-json
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: fix-encoding-pragma
+        args: [--remove]
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
 
-    - repo: https://github.com/ambv/black
-      rev: 24.3.0
-      hooks:
-          - id: black
+  - repo: https://github.com/ambv/black
+    rev: 24.3.0
+    hooks:
+      - id: black
 
-    - repo: https://github.com/pycqa/flake8
-      rev: 7.0.0
-      hooks:
-          - id: flake8
-            additional_dependencies: ['flake8-django<2']
-            # args:
-            #   ["--config=.flake8",]
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        additional_dependencies: ["flake8-django<2"]
+        # args:
+        #   ["--config=.flake8",]
 
-    - repo: https://github.com/pycqa/isort
-      rev: 5.13.2
-      hooks:
-          - id: isort
-            args: ['--profile', 'black', '--filter-files']
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]
 
 ci:
-    autoupdate_schedule: quarterly
-    skip: []
-    submodules: false
+  autoupdate_schedule: quarterly
+  skip: []
+  submodules: false

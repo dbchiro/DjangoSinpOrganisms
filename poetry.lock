@@ -469,6 +469,17 @@ files = [
 Django = ">=3.2"
 
 [[package]]
+name = "django-fixture-magic"
+version = "0.1.5"
+description = "A few extra management tools to handle fixtures."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-fixture-magic-0.1.5.tar.gz", hash = "sha256:d82a4d4f6ade078e942927b5157f0536d0cd0232adfeb943dced0858128dd734"},
+    {file = "django_fixture_magic-0.1.5-py2-none-any.whl", hash = "sha256:c50f3de4a46a5844e2c1e2a9ff88b29db0830da8383e43d5ef6a66f1c4bfd8af"},
+]
+
+[[package]]
 name = "djangorestframework"
 version = "3.15.1"
 description = "Web APIs for Django, made easy."
@@ -1819,4 +1830,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<4.0"
-content-hash = "cf1077915122bd18fddde9070212fede5ed04b9ce600e5ad5b8f6304c7e45917"
+content-hash = "d7a2a08f934279ef349678ee3f3ea4a3486bd6147a51da4016c1ba551e3ad7b1"

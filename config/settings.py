@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "fixture_magic",
     "rest_framework",  # required for serving swagger ui's css/js files
     "drf_yasg",
     "sinp_nomenclatures",

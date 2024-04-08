@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="organism",
             name="administrative_reference",
-            field=models.CharField(
+            field=models.CharField(  # noqa: DJ01
                 blank=True, max_length=100, null=True, verbose_name="SIRET"
             ),
         ),

@@ -14,12 +14,6 @@ class OrganismMemberSerializer(ModelSerializer):
             "member",
             "member_level",
         ]
-        read_only_fields = [
-            "created_by",
-            "updated_by",
-            "timestamp_create",
-            "timestamp_update",
-        ]
 
 
 class OrganismSerializer(ModelSerializer):
@@ -41,16 +35,8 @@ class OrganismSerializer(ModelSerializer):
             "email",
             "phone_number",
             "url",
-            "created_by",
-            "updated_by",
-            "timestamp_create",
-            "timestamp_update",
         ]
         read_only_fields = [
-            "created_by",
-            "updated_by",
-            "timestamp_create",
-            "timestamp_update",
             "uuid",
         ]
 

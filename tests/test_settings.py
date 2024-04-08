@@ -1,4 +1,6 @@
-INSTALLED_APPS = ("organisms",)
+INSTALLED_APPS = [
+    "organisms",
+]
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",

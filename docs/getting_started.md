@@ -12,8 +12,8 @@
 
 ## Supported Django versions
 
-- Django 2.2 (not tested)
-- Django 3.2
+- Django 2.2 (not tested) > Django 4.x
+
 
 ## Supported Django Rest Framework versions
 

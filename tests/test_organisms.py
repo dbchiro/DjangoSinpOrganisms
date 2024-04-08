@@ -1,12 +1,26 @@
-from django.test import Client
+import uuid
 
-# def test_version():
-#     assert __version__ == "0.1.0"
+from django.test import TestCase
+from sinp_nomenclatures.models import Nomenclature
+
+from sinp_organisms.models import Organism
+
+org_uuid = uuid.uuid4()
 
 
-# Using the standard RequestFactory API to create a form POST request
-c = Client()
-request = c.post(
-    "/api/v1/nomenclatures/nomenclatures",
-    {"code": "test", "mnemonic": "test", "label": "test", "type": 1},
-)
+class OrganismTestCase(TestCase):
+    def setUp(self):
+        Organism.objects.create(
+            uuid=org_uuid,
+            administrative_reference="18004417400019",
+            label="MUSEUM NATIONAL D'HISTOIRE NATURELLE",
+            short_label="MNHN",
+            action_scope=Nomenclature.objects.get(
+                type__mnemonic="action_scope"
+            )[0],
+        )
+
+    def test_animals_can_speak(self):
+        """Animals that can speak are correctly identified"""
+        org1 = Organism.objects.get(uuid=org_uuid)
+        self.assertEqual(org1.short_label, "MNHN")

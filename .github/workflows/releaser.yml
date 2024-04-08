@@ -3,7 +3,7 @@ name: "🚀 Releaser"
 on:
   push:
     tags:
-      - "*"
+      - "*.*.*"
 
 # env:
 #   PROJECT_FOLDER: "plugin_qgis_lpo"

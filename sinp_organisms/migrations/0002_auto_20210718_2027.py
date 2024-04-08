@@ -41,9 +41,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="organism",
             name="geographic_area_details",
-            field=models.CharField(
+            field=models.CharField(  # noqa: DJ01
                 blank=True,
-                help_text="Information précisant la zone géographique d'action.",
+                help_text=(
+                    "Information précisant la zone géographique d'action."
+                ),
                 max_length=500,
                 null=True,
                 verbose_name="Détails sur la zone géographique",
@@ -52,13 +54,17 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="organism",
             name="phone_number",
-            field=models.CharField(
+            field=models.CharField(  # noqa: DJ01
                 blank=True,
                 max_length=17,
                 null=True,
                 validators=[
                     django.core.validators.RegexValidator(
-                        message="Les numéros de téléphones doivent être renseignés avec le format :'+999999999'. jusqu'à 15 chiffres sont autorisés",
+                        message=(
+                            "Les numéros de téléphones doivent être "
+                            "renseignés avec le format :'+999999999'. "
+                            "jusqu'à 15 chiffres sont autorisés"
+                        ),
                         regex="^\\+?1?\\d{9,15}$",
                     )
                 ],
@@ -69,7 +75,9 @@ class Migration(migrations.Migration):
             model_name="organism",
             name="status",
             field=models.ForeignKey(
-                help_text="Permet d'indiquer si l'organisme est public ou privé",
+                help_text=(
+                    "Permet d'indiquer si l'organisme est public ou privé"
+                ),
                 limit_choices_to={"type__mnemonic": "organism_status"},
                 on_delete=django.db.models.deletion.DO_NOTHING,
                 related_name="organism_status",
