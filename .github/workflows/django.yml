@@ -32,10 +32,12 @@ jobs:
           poetry run coverage report -m
           ls -alh .coverage
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.0.1
+        uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
           slug: dbchiro/DjangoSinpOrganisms
+          files: ./.coverage
       # - name: Run test server
       #   env:
       #     SECRET_KEY: 625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a
