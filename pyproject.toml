@@ -19,7 +19,6 @@ dj-sinp-nomenclatures = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.12.1"
-pytest = "^7.4.3"
 isort = "^5.13.2"
 flake8 = ">=6.1,<8.0"
 flake8-isort = "^6.1.1"
