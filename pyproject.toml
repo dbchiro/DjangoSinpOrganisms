@@ -31,6 +31,7 @@ dj-database-url = "^2.1.0"
 #dj-sinp-nomenclatures = { path = "../dj_sinp_nomenclatures", develop = true }
 bpython = "^0.24"
 django-fixture-magic = "^0.1.5"
+coverage = "^7.4.4"
 
 
 [tool.poetry.group.docs.dependencies]

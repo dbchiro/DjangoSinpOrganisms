@@ -138,10 +138,13 @@ class OrganismMember(BaseModel):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         verbose_name=_("Utilisateur"),
-        related_name="members",
+        # related_name="organisms",
     )
     organism = models.ForeignKey(
-        "Organism", on_delete=models.CASCADE, verbose_name=_("Organisme")
+        "Organism",
+        on_delete=models.CASCADE,
+        verbose_name=_("Organisme"),
+        # related_name="members_set",
     )
     member_level = models.ForeignKey(
         Nomenclature,
@@ -157,7 +160,7 @@ class OrganismMember(BaseModel):
         unique_together = ("member", "organism", "member_level")
 
     def __str__(self):
-        return f"{self.member.username} [{self.member_level}]"
+        return f"{self.member} [{self.member_level}]"
 
     def natural_key(self) -> Tuple[UUID, UUID, str, str]:
         """_summary_
@@ -170,5 +173,5 @@ class OrganismMember(BaseModel):
             self.member.username,
             self.organism.uuid,
             self.member_level.code,
-            self.member_level.type.code,
+            self.member_level.type.mnemonic,
         )

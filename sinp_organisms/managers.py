@@ -20,7 +20,7 @@ class OrganismManager(Manager):
 
 class OrganismMemberManager(Manager):
 
-    def get_by_natural_keys(
+    def get_by_natural_key(
         self,
         member_username: str,
         organism_uuid: UUID,
@@ -31,5 +31,5 @@ class OrganismMemberManager(Manager):
             member__username=member_username,
             organism__uuid=organism_uuid,
             member_level__code=member_level_code,
-            member_level__type__code=member_level_type_code,
+            member_level__type__mnemonic=member_level_type_code,
         )
