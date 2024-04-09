@@ -28,7 +28,12 @@ jobs:
         env:
           SECRET_KEY: 625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a
         run: |
-          poetry run python -m manage test
+          poetry run coverage -m manage test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: dbchiro/DjangoSinpOrganisms
       # - name: Run test server
       #   env:
       #     SECRET_KEY: 625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a
