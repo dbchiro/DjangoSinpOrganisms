@@ -2,12 +2,13 @@
 name = "dj_sinp_organisms"
 version = "1.2.0"
 description = "Django app to manage french SINP organisms standard"
-authors = ["dbChiro project <project@dbchiro.org>"]
+authors = ["dbChiro project", "hypsug0"]
 license = "AGPLv3"
 keywords = ["SINP", "Nomenclatures", "Django", "France", "dbChiroWeb"]
-readme = "README.rst"
-homepage = "https://github.com/dbchiro/DjangoSinpNomenclature"
-repository = "https://github.com/dbchiro/DjangoSinpNomenclature"
+readme = "README.md"
+homepage = "https://github.com/dbchiro/DjangoSinpOrganisms"
+repository = "https://github.com/dbchiro/DjangoSinpOrganisms"
+documentation = "https://dbchiro.github.io/DjangoSinpOrganisms/"
 include = ["LICENSE"]
 packages = [{ include = "sinp_organisms" }]
 
