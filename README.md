@@ -43,3 +43,7 @@ urlpatterns = [
 5. Start the development server and visit <http://127.0.0.1:8000/admin/>
    to create an organism (you'll need the Admin app enabled).
 6. Visit <http://127.0.0.1:8000/api/v1/organisms> to view organisms API.
+
+## Database models
+
+![models.png](./docs/_static/models.png)
