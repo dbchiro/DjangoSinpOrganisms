@@ -17,7 +17,6 @@ python = ">=3.8.1,<4.0"
 Django = ">=3.2"
 djangorestframework = "^3"
 dj-sinp-nomenclatures = ">=0.0.0"
-django-extensions = "^3.2.3"
 
 [tool.poetry.group.dev.dependencies]
 black = ">=23.12.1,<25.0.0"
@@ -33,6 +32,7 @@ dj-database-url = "^2.1.0"
 bpython = "^0.24"
 django-fixture-magic = "^0.1.5"
 coverage = "^7.4.4"
+django-extensions = "^3.2.3"
 
 
 [tool.poetry.group.docs.dependencies]
