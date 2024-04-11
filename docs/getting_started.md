@@ -6,23 +6,14 @@
 - `/organisms/<int:pk>` > retrieve one organism by organism id
 - `/organisms/<int:pk>/members` > retrieve one organism members by organism id
 
-## Supported Python versions
+## Dependencies
 
-- Coming soon
-
-## Supported Django versions
-
-- Django 2.2 (not tested) > Django 4.x
-
-
-## Supported Django Rest Framework versions
-
-- Django Rest Framework 3.12
+- Django Rest Framework
 
 ## Installation
 
 ```bash
-$ pip install -U dj-sinp-organisms
+pip install -U dj-sinp-organisms
 ```
 
 ## Configuration
@@ -53,3 +44,7 @@ urlpatterns = [
     (...),
 ]
 ```
+
+## Models
+
+![Database model](./_static/models.png)
