@@ -27,7 +27,9 @@ jobs:
       #  -----  Install dependencies  -----
       #------------------------------------
       - name: Install dependencies
-        run: poetry install
+        run: |
+          sudo apt update && sudo apt install -y libgraphviz-dev
+          poetry install --all-extras
 
       - name: Create changelog diff
         id: changelog_diff

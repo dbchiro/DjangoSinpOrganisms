@@ -23,7 +23,9 @@ jobs:
       - name: Run image
         uses: abatilo/actions-poetry@v3
       - name: Install dependencies
-        run: poetry install --all-extras
+        run: |
+          sudo apt update && sudo apt install -y libgraphviz-dev
+          poetry install --all-extras
       - name: Run Tests
         env:
           SECRET_KEY: 625a5459bc6e0d2e5227f9d7ec697c4a473f8697a84f5f7c8a
