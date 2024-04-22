@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dj_sinp_organisms"
-version = "1.2.1"
+version = "1.3.0"
 description = "Django app to manage french SINP organisms standard"
 authors = ["dbChiro project", "hypsug0"]
 license = "AGPLv3"

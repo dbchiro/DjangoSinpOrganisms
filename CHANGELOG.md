@@ -8,6 +8,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## unreleased
 
+## [1.3.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.3.0) - 2024-04-22
+
+### Changed
+
+* Reset migrations (as in dj-sinp-nomenclatures)
+* Update dependencies
+
+### Version note
+
+* Please update to module to 1.2.1 version and Execute SQL query on database:
+
+```sql
+DELETE FROM django_migrations WHERE app LIKE 'sinp%' AND name NOT LIKE '0001_%';
+```
+
 ## 1.2.0 - 2024-04-10
 
 * Fix natural keys
