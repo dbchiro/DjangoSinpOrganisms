@@ -16,10 +16,10 @@ packages = [{ include = "sinp_organisms" }]
 python = ">=3.8.1,<4.0"
 Django = ">=3.2"
 djangorestframework = "^3"
-dj-sinp-nomenclatures = ">=0.0.0"
+dj-sinp-nomenclatures = "^1.1.0"
 
 [tool.poetry.group.dev.dependencies]
-black = ">=23.12.1,<25.0.0"
+black = "^24.4.0"
 isort = "^5.13.2"
 flake8 = ">=6.1,<8.0"
 flake8-isort = "^6.1.1"
