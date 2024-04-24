@@ -8,13 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## unreleased
 
-## [1.3.1](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.3.1) - 2024-04-24
+## 1.3.1 - 2024-04-24
 
 ### Changed
 
 * Recreate inpn organisms fixture
 
-## [1.3.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.3.0) - 2024-04-22
+## 1.3.0 - 2024-04-22
 
 ### Changed
 
@@ -29,16 +29,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 DELETE FROM django_migrations WHERE app LIKE 'sinp%' AND name NOT LIKE '0001_%';
 ```
 
-## [1.2.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.2.0) - 2024-04-10
+## 1.2.0 - 2024-04-10
 
 * Fix natural keys
 * Improve tests
 
-## [1.1.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.1.0) - 2024-03-23
+## 1.1.0 - 2024-03-23
 
 * Remove logging actions (created by, updated by and timestamps)
 
-## [1.0.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.0.0) - 2024-03-22
+## 1.0.0 - 2024-03-22
 
 * First release
 * Specify models
