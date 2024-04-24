@@ -29,27 +29,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 DELETE FROM django_migrations WHERE app LIKE 'sinp%' AND name NOT LIKE '0001_%';
 ```
 
-## 1.2.0 - 2024-04-10
+## [1.2.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.2.0) - 2024-04-10
 
 * Fix natural keys
 * Improve tests
 
-## 1.1.0 - 2024-03-23
+## [1.1.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.1.0) - 2024-03-23
 
 * Remove logging actions (created by, updated by and timestamps)
 
-## 1.0.0 - 2024-03-22
+## [1.0.0](https://github.com/dbchiro/DjangoSinpOrganisms/releases/tag/1.0.0) - 2024-03-22
 
-* V1
-
-## 0.2.1 - 2024-03-23
-
-* remove test members from fixtures
-
-## 0.2.0
-
-## 0.1.0
-
+* First release
 * Specify models
 * Basic API routes
 * Basic readonly viewsets
