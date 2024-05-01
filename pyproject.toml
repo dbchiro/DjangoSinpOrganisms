@@ -39,7 +39,7 @@ django-extensions = "^3.2.3"
 sphinx = ">=6,<8"
 sphinx-rtd-theme = "^2.0.0"
 rstcheck = "^6.2.0"
-myst-parser = "^2.0.0"
+myst-parser = ">=2,<4"
 
 [tool.isort]
 include_trailing_comma = true
