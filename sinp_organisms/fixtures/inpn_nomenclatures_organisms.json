@@ -4,20 +4,6 @@
     "fields": {
         "timestamp_create": "2021-07-18T21:33:00.429Z",
         "timestamp_update": "2021-07-18T21:33:00.429Z",
-        "code": "10",
-        "mnemonic": "organism_status",
-        "label": "organism_status",
-        "status": "VALID",
-        "create_date": "2021-07-18",
-        "update_date": "2021-07-18",
-        "source": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.type",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:33:00.429Z",
-        "timestamp_update": "2021-07-18T21:33:00.429Z",
         "code": "11",
         "mnemonic": "organism_type",
         "label": "organism_type",
@@ -60,9 +46,9 @@
     "fields": {
         "timestamp_create": "2021-07-18T21:33:00.429Z",
         "timestamp_update": "2021-07-18T21:33:00.429Z",
-        "code": "8",
-        "mnemonic": "member_level",
-        "label": "member_level",
+        "code": "10",
+        "mnemonic": "organism_status",
+        "label": "organism_status",
         "status": "VALID",
         "create_date": "2021-07-18",
         "update_date": "2021-07-18",
@@ -70,588 +56,17 @@
     }
 },
 {
-    "model": "sinp_nomenclatures.nomenclature",
+    "model": "sinp_nomenclatures.type",
     "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "admin",
-        "label": "Administration",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "assoc",
-        "label": "Association",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "privcomp",
-        "label": "Entreprise privée",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "indprivcomp",
-        "label": "Entreprise privée individuelle",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "pubestab",
-        "label": "Etablissement public",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "11"
-        ],
-        "code": "intstruc",
-        "label": "Structure interne",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "01",
-        "label": "Guadeloupe",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "02",
-        "label": "Martinique",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "03",
-        "label": "Guyane",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "04",
-        "label": "La Réunion",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "06",
-        "label": "Mayotte",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "11",
-        "label": "Île-de-France",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "21",
-        "label": "Champagne-Ardenne",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "22",
-        "label": "Picardie",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "23",
-        "label": "Haute-Normandie",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "24",
-        "label": "Centre-Val de Loire",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "25",
-        "label": "Basse-Normandie",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "26",
-        "label": "Bourgogne",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "27",
-        "label": "Bourgogne-Franche-Comté",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "28",
-        "label": "Normandie",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "31",
-        "label": "Nord-Pas-de-Calais",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "32",
-        "label": "Nord-Pas-de-Calais-Picardie",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "41",
-        "label": "Lorraine",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "42",
-        "label": "Alsace",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "43",
-        "label": "Franche-Comté",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "44",
-        "label": "Alsace-Champagne-Ardenne-Lorraine",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "52",
-        "label": "Pays de la Loire",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "53",
-        "label": "Bretagne",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "54",
-        "label": "Poitou-Charentes",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "72",
-        "label": "Aquitaine",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "73",
-        "label": "Midi-Pyrénées",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "74",
-        "label": "Limousin",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "75",
-        "label": "Aquitaine-Limousin-Poitou-Charentes",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "76",
-        "label": "Languedoc-Roussillon-Midi-Pyrénées",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "82",
-        "label": "Rhône-Alpes",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "7"
-        ],
-        "code": "83",
-        "label": "Auvergne",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "10"
-        ],
-        "code": "unk",
-        "label": "Inconnu",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "10"
-        ],
-        "code": "pub",
-        "label": "Public",
-        "description": "",
-        "active": true,
-        "parent": null
-    }
-},
-{
-    "model": "sinp_nomenclatures.nomenclature",
-    "fields": {
-        "timestamp_create": "2021-07-18T21:37:00.239Z",
-        "timestamp_update": "2021-07-18T21:37:00.239Z",
-        "type": [
-            "10"
-        ],
-        "code": "priv",
-        "label": "Privé",
-        "description": "",
-        "active": true,
-        "parent": null
+        "timestamp_create": "2021-07-18T21:33:00.429Z",
+        "timestamp_update": "2021-07-18T21:33:00.429Z",
+        "code": "8",
+        "mnemonic": "member_level",
+        "label": "member_level",
+        "status": "VALID",
+        "create_date": "2021-07-18",
+        "update_date": "2021-07-18",
+        "source": null
     }
 },
 {
@@ -665,7 +80,7 @@
         "code": "world",
         "label": "Mondial",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -680,7 +95,547 @@
         "code": "regrp",
         "label": "Regroupement d'organismes",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "admin",
+        "label": "Administration",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "assoc",
+        "label": "Association",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "privcomp",
+        "label": "Entreprise privée",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "indprivcomp",
+        "label": "Entreprise privée individuelle",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "pubestab",
+        "label": "Etablissement public",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "11"
+        ],
+        "code": "intstruc",
+        "label": "Structure interne",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "01",
+        "label": "Guadeloupe",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "02",
+        "label": "Martinique",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "03",
+        "label": "Guyane",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "04",
+        "label": "La Réunion",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "06",
+        "label": "Mayotte",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "11",
+        "label": "Île-de-France",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "21",
+        "label": "Champagne-Ardenne",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "22",
+        "label": "Picardie",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "23",
+        "label": "Haute-Normandie",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "24",
+        "label": "Centre-Val de Loire",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "25",
+        "label": "Basse-Normandie",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "26",
+        "label": "Bourgogne",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "27",
+        "label": "Bourgogne-Franche-Comté",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "28",
+        "label": "Normandie",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "31",
+        "label": "Nord-Pas-de-Calais",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "32",
+        "label": "Nord-Pas-de-Calais-Picardie",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "41",
+        "label": "Lorraine",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "42",
+        "label": "Alsace",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "43",
+        "label": "Franche-Comté",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "44",
+        "label": "Alsace-Champagne-Ardenne-Lorraine",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "52",
+        "label": "Pays de la Loire",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "53",
+        "label": "Bretagne",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "54",
+        "label": "Poitou-Charentes",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "72",
+        "label": "Aquitaine",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "73",
+        "label": "Midi-Pyrénées",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "74",
+        "label": "Limousin",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "75",
+        "label": "Aquitaine-Limousin-Poitou-Charentes",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "76",
+        "label": "Languedoc-Roussillon-Midi-Pyrénées",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "82",
+        "label": "Rhône-Alpes",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "7"
+        ],
+        "code": "83",
+        "label": "Auvergne",
+        "description": "",
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -695,7 +650,7 @@
         "code": "84",
         "label": "Auvergne-Rhône-Alpes",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -710,7 +665,7 @@
         "code": "91",
         "label": "Languedoc-Roussillon",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -725,7 +680,7 @@
         "code": "93",
         "label": "Provence-Alpes-Côte d'Azur",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -740,7 +695,7 @@
         "code": "94",
         "label": "Corse",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -755,7 +710,7 @@
         "code": "eu",
         "label": "Européen",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -770,7 +725,7 @@
         "code": "nat",
         "label": "national",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -785,7 +740,7 @@
         "code": "supreg",
         "label": "Supra régional",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -800,7 +755,7 @@
         "code": "reg",
         "label": "Régional",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -815,7 +770,52 @@
         "code": "unknow",
         "label": "Inconnu",
         "description": "",
-        "active": true,
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "10"
+        ],
+        "code": "unk",
+        "label": "Inconnu",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "10"
+        ],
+        "code": "pub",
+        "label": "Public",
+        "description": "",
+        "status": "ENABLED",
+        "parent": null
+    }
+},
+{
+    "model": "sinp_nomenclatures.nomenclature",
+    "fields": {
+        "timestamp_create": "2021-07-18T21:37:00.239Z",
+        "timestamp_update": "2021-07-18T21:37:00.239Z",
+        "type": [
+            "10"
+        ],
+        "code": "priv",
+        "label": "Privé",
+        "description": "",
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -830,7 +830,7 @@
         "code": "manager",
         "label": "Gestionnaire",
         "description": "Permet la gestion des comptes et des métadonnées liés à ses organisme",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -845,7 +845,7 @@
         "code": "validator",
         "label": "Validateur",
         "description": "Permet de valider les observations associées à son organisme",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 },
@@ -860,7 +860,7 @@
         "code": "observer",
         "label": "Observateur",
         "description": "Permet de saisir des observations associées à son organisme",
-        "active": true,
+        "status": "ENABLED",
         "parent": null
     }
 }

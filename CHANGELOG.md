@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## unreleased
 
+## 1.3.2 - 2024-11-13
+
+### Changed
+
+* Fix fixtures
+
 ## 1.3.1 - 2024-04-24
 
 ### Changed
