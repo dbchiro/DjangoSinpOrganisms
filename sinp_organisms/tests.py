@@ -13,7 +13,7 @@ org1_uuid = uuid.uuid4()
 
 class OrganismTestCase(TestCase):
     fixtures = [
-        "nomenclatures.json",
+        "inpn_nomenclatures_organisms.json",
     ]
 
     def setUp(self):
