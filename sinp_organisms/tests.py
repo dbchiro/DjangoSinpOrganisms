@@ -40,9 +40,11 @@ class OrganismTestCase(TestCase):
         self.org_member1 = OrganismMember.objects.create(
             member=self.user1,
             organism=self.org1,
-            member_level=Nomenclature.objects.get(
+        )
+        self.org_member1.member_level.set(
+            Nomenclature.objects.filter(
                 type__mnemonic="member_level", code="manager"
-            ),
+            )
         )
 
     def test_organisms(self):
@@ -54,8 +56,6 @@ class OrganismTestCase(TestCase):
             *(
                 "user1",
                 org1_uuid,
-                "manager",
-                "member_level",
             )
         )
         user2 = User.objects.get_by_natural_key(
@@ -69,8 +69,8 @@ class OrganismTestCase(TestCase):
         self.assertEqual(org1_1, org1_2)
         self.assertEqual(user1, member1.member)
         self.assertIn(member1, org1_1.organismmember_set.all())
-        self.assertEqual(str(member1), f"{user1} [Gestionnaire]")
+        self.assertEqual(str(member1), f"{user1} [ORG1]")
         self.assertEqual(
             member1.natural_key(),
-            (user1.username, org1_1.uuid, "manager", "member_level"),
+            (user1.username, org1_1.uuid),
         )

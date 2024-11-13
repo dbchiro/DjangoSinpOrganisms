@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## unreleased
 
+## 1.4.0 - 2024-11-13
+
+### Changed
+
+* member_level field on ManyToMany field is now (fix #22).
+
 ## 1.3.2 - 2024-11-13
 
 ### Changed

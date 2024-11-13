@@ -146,9 +146,8 @@ class OrganismMember(BaseModel):
         verbose_name=_("Organisme"),
         # related_name="members_set",
     )
-    member_level = models.ForeignKey(
+    member_level = models.ManyToManyField(
         Nomenclature,
-        on_delete=models.CASCADE,
         limit_choices_to={"type__mnemonic": "member_level"},
         related_name="member_level",
         verbose_name=_("Niveau du membre"),
@@ -157,21 +156,22 @@ class OrganismMember(BaseModel):
 
     class Meta:
         verbose_name_plural = _("Membre des organismes")
-        unique_together = ("member", "organism", "member_level")
+        unique_together = (
+            "member",
+            "organism",
+        )
 
     def __str__(self):
-        return f"{self.member} [{self.member_level}]"
+        return f"{self.member} [{self.organism}]"
 
-    def natural_key(self) -> Tuple[UUID, UUID, str, str]:
+    def natural_key(self) -> Tuple[
+        str,
+        UUID,
+    ]:
         """_summary_
 
         Returns:
             Tuple[UUID,UUID, UUID,str,str]: A tuple with respectively
             member UUID, organism UUID, member_level code
         """
-        return (
-            self.member.username,
-            self.organism.uuid,
-            self.member_level.code,
-            self.member_level.type.mnemonic,
-        )
+        return (self.member.username, self.organism.uuid)

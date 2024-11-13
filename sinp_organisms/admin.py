@@ -39,9 +39,8 @@ class OrganismMemberAdmin(admin.ModelAdmin):
     list_display = (
         "member",
         "organism",
-        "member_level",
     )
-    list_filter = ("organism", "member_level")
+    list_filter = ("organism", "member")
 
 
 admin.site.register(Organism, OrganismAdmin)

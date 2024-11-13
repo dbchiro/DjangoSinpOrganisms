@@ -41,6 +41,6 @@ class OrganismMemberViewset(ModelViewSet):
     permission_classes = [DjangoModelPermissions]
     queryset = (
         OrganismMember.objects.select_related("member")
-        .select_related("member_level")
+        .prefetch_related("member_level")
         .all()
     )
