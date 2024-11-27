@@ -81,7 +81,7 @@
         "label": "Mondial",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -96,7 +96,7 @@
         "label": "Regroupement d'organismes",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -111,7 +111,7 @@
         "label": "Administration",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -126,7 +126,7 @@
         "label": "Association",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -141,7 +141,7 @@
         "label": "Entreprise privée",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -156,7 +156,7 @@
         "label": "Entreprise privée individuelle",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -171,7 +171,7 @@
         "label": "Etablissement public",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -186,7 +186,7 @@
         "label": "Structure interne",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -201,7 +201,7 @@
         "label": "Guadeloupe",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -216,7 +216,7 @@
         "label": "Martinique",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -231,7 +231,7 @@
         "label": "Guyane",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -246,7 +246,7 @@
         "label": "La Réunion",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -261,7 +261,7 @@
         "label": "Mayotte",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -276,7 +276,7 @@
         "label": "Île-de-France",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -291,7 +291,7 @@
         "label": "Champagne-Ardenne",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -306,7 +306,7 @@
         "label": "Picardie",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -321,7 +321,7 @@
         "label": "Haute-Normandie",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -336,7 +336,7 @@
         "label": "Centre-Val de Loire",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -351,7 +351,7 @@
         "label": "Basse-Normandie",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -366,7 +366,7 @@
         "label": "Bourgogne",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -381,7 +381,7 @@
         "label": "Bourgogne-Franche-Comté",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -396,7 +396,7 @@
         "label": "Normandie",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -411,7 +411,7 @@
         "label": "Nord-Pas-de-Calais",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -426,7 +426,7 @@
         "label": "Nord-Pas-de-Calais-Picardie",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -441,7 +441,7 @@
         "label": "Lorraine",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -456,7 +456,7 @@
         "label": "Alsace",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -471,7 +471,7 @@
         "label": "Franche-Comté",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -486,7 +486,7 @@
         "label": "Alsace-Champagne-Ardenne-Lorraine",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -501,7 +501,7 @@
         "label": "Pays de la Loire",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -516,7 +516,7 @@
         "label": "Bretagne",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -531,7 +531,7 @@
         "label": "Poitou-Charentes",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -546,7 +546,7 @@
         "label": "Aquitaine",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -561,7 +561,7 @@
         "label": "Midi-Pyrénées",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -576,7 +576,7 @@
         "label": "Limousin",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -591,7 +591,7 @@
         "label": "Aquitaine-Limousin-Poitou-Charentes",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -606,7 +606,7 @@
         "label": "Languedoc-Roussillon-Midi-Pyrénées",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -621,7 +621,7 @@
         "label": "Rhône-Alpes",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -636,7 +636,7 @@
         "label": "Auvergne",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -651,7 +651,7 @@
         "label": "Auvergne-Rhône-Alpes",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -666,7 +666,7 @@
         "label": "Languedoc-Roussillon",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -681,7 +681,7 @@
         "label": "Provence-Alpes-Côte d'Azur",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -696,7 +696,7 @@
         "label": "Corse",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -711,7 +711,7 @@
         "label": "Européen",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -726,7 +726,7 @@
         "label": "national",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -741,7 +741,7 @@
         "label": "Supra régional",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -756,7 +756,7 @@
         "label": "Régional",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -771,7 +771,7 @@
         "label": "Inconnu",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -786,7 +786,7 @@
         "label": "Inconnu",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -801,7 +801,7 @@
         "label": "Public",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -816,7 +816,7 @@
         "label": "Privé",
         "description": "",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -831,7 +831,7 @@
         "label": "Gestionnaire",
         "description": "Permet la gestion des comptes et des métadonnées liés à ses organisme",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -846,7 +846,7 @@
         "label": "Validateur",
         "description": "Permet de valider les observations associées à son organisme",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 },
 {
@@ -861,7 +861,7 @@
         "label": "Observateur",
         "description": "Permet de saisir des observations associées à son organisme",
         "status": "ENABLED",
-        "parent": null
+        "parents": []
     }
 }
 ]
