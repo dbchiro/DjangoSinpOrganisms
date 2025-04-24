@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 <!-- ## Unreleased [{version_tag}](https://github.com/opengisch/qgis-plugin-ci/releases/tag/{version_tag}) - YYYY-MM-DD -->
 
+## 1.4.2 - 2025-04-24
+
+### Changed
+
+* Add a search feature in backoffice (searches on `short_label`, `label` and `SIRET`)
+* Update dependencies
+* Add translations
+
 ## 1.4.1 - 2024-11-27
 
 ### Changed

@@ -30,6 +30,7 @@ class OrganismAdmin(admin.ModelAdmin):
         "parent",
     )
     list_filter = ("type", "enabled", "geographic_area")
+    search_fields = ("short_label", "label", "administrative_reference")
     actions = [activate, inactivate]
 
 
