@@ -29,7 +29,7 @@ psycopg2-binary = "^2.9.9"
 drf-yasg = "^1.21.8"
 dj-database-url = "^2.1.0"
 #dj-sinp-nomenclatures = { path = "../dj_sinp_nomenclatures", develop = true }
-bpython = "^0.24"
+bpython = ">=0.24,<0.27"
 django-fixture-magic = "^0.1.5"
 coverage = "^7.4.4"
 django-extensions = "^3.2.3"
