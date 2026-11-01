@@ -53,7 +53,7 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Run image
-        uses: abatilo/actions-poetry@v3
+        uses: abatilo/actions-poetry@v4
         #------------------------------------
         #  -----  Install dependencies  -----
         #------------------------------------
